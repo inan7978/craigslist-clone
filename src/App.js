@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./components/layout/Layout";
+import "./App.css";
+import Home from "./views/Home";
+import SignIn from "./views/SignIn";
+import SignUp from "./views/SignUp";
+import Forgot from "./views/Forgot";
+import Reset from "./views/Reset";
+import Listings from "./views/Listings";
+import CreateListing from "./views/CreateListing";
+import EditListing from "./views/EditListing";
+import EditProfile from "./views/EditProfile";
+import Dashboard from "./views/Dashboard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Router>
+        <Routes>
+          <Route path="/sign-in" exact element={<SignIn />} />
+          <Route path="/sign-up" exact element={<SignUp />} />
+          <Route path="/forgot" exact element={<Forgot />} />
+          <Route path="/reset" exact element={<Reset />} />
+          <Route path="/listings" exact element={<Listings />} />
+          <Route path="/create-listing" exact element={<CreateListing />} />
+          <Route path="/edit-listing" exact element={<EditListing />} />
+          <Route path="/edit-profile" exact element={<EditProfile />} />
+          <Route path="/dashboard" exact element={<Dashboard />} />
+          <Route path="/" exact element={<Home />} />
+        </Routes>
+      </Router>
+    </Layout>
   );
 }
 
