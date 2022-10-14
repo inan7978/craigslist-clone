@@ -1,7 +1,7 @@
 const Reset = () => {
   return (
     <>
-      <div></div>
+      <div>Reset</div>
     </>
   );
 };

@@ -1,13 +1,18 @@
 import Navigation from './Navigation';
 import Footer from './Footer';
+import './Layout.css';
 
 const Layout = (props) => {
   return (
-    <>
-      <Navigation />
-      <div>{props.children}</div>
-      <Footer />
-    </>
+    <div className='container'>
+      <div className='navigation'>
+        <Navigation />
+      </div>
+      <div className='content'>{props.children}</div>
+      <div className='footer'>
+        <Footer />
+      </div>
+    </div>
   );
 };
 

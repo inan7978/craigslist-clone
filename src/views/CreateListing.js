@@ -1,7 +1,7 @@
 const CreateListing = () => {
   return (
     <>
-      <div></div>
+      <div>Create Listing</div>
     </>
   );
 };

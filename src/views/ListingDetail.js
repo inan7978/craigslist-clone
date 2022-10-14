@@ -1,7 +1,7 @@
 const ListingDetail = (props) => {
   return (
     <>
-      <div></div>
+      <div>Listing Detail</div>
     </>
   );
 };

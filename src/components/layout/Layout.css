@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+.content {
+  background-color: lightblue;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  margin-top: 3.2rem;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 2.5rem;
+  background-color: pink;
+}

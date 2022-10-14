@@ -1,7 +1,7 @@
 const EditListing = () => {
   return (
     <>
-      <div></div>
+      <div>Edit Listing</div>
     </>
   );
 };
