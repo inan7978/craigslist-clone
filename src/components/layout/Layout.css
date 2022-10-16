@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 .container {
+  margin: 0;
+  padding: 0;
 }
 
 .navigation {
@@ -10,15 +12,17 @@
   width: 100vw;
 }
 .content {
-  background-color: lightblue;
-  width: 100%;
+  /* background-color: rgb(193, 220, 230); */
+  width: 100vw;
   margin-bottom: 2.5rem;
   margin-top: 3.2rem;
+  padding: 1rem;
 }
 .footer {
   position: fixed;
   bottom: 0;
   width: 100vw;
   height: 2.5rem;
-  background-color: pink;
+  border-top: solid;
+  background-color: white;
 }

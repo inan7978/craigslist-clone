@@ -2,16 +2,16 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import './Navigation.css';
 
 const Navigation = () => {
   return (
-    <Navbar bg='light' expand='lg'>
+    <Navbar bg='light' expand='lg' className='naviBar'>
       <Container>
         <Navbar.Brand href='/'>Sell.it</Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='me-auto'>
-            <Nav.Link href='/'>Home</Nav.Link>
             <Nav.Link href='/sign-up'>Sign Up</Nav.Link>
             <Nav.Link href='/sign-in'>Log in</Nav.Link>
             <Nav.Link href='/listings'>Listings</Nav.Link>

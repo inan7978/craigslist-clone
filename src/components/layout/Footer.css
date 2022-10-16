@@ -1,4 +1,6 @@
 .contents {
   display: flex;
   justify-content: space-between;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }

@@ -16,7 +16,7 @@ import Navigation from './components/layout/Navigation';
 
 function App() {
   return (
-    <>
+    <div className='App'>
       <Layout>
         <Router>
           <Routes>
@@ -33,7 +33,7 @@ function App() {
           </Routes>
         </Router>
       </Layout>
-    </>
+    </div>
   );
 }
 
