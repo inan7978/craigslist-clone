@@ -1,4 +1,5 @@
 .naviBar {
   margin: 0;
   padding-left: 1rem;
+  border-bottom: solid;
 }
